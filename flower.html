@@ -10,16 +10,6 @@
 
   <!-- Document Title -->
   <title>FLOWERS</title>
-
-  <script>
-    // Chờ 7 giây trước khi thực hiện các hành động khác
-    document.addEventListener("DOMContentLoaded", function () {
-      setTimeout(function () {
-        console.log("Đã chờ 7 giây, tiếp tục thực thi.");
-        // Thêm các hành động khác ở đây nếu cần
-      }, 7000);
-    });
-  </script>
 </head>
 
 <body class="not-loaded">
@@ -58,9 +48,19 @@
 
   <!-- Title -->
   <h1 class="title"><span id="title"></span></h1>
+
+  <!-- Import Javascript -->
+  <script src="js/main.js"></script>
+
+  <script>
+    // Chờ 7 giây sau khi trang tải xong
+    window.onload = function() {
+      setTimeout(function() {
+        console.log("Đã chờ 7 giây, tiếp tục thực thi.");
+        // Thực hiện các tác vụ cần thiết sau 7 giây ở đây
+      }, 7000);  // 7000ms = 7 giây
+    };
+  </script>
 </body>
 
 </html>
-
-<!-- Import Javascript -->
-<script src="js/main.js"></script>
