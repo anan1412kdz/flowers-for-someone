@@ -8,7 +8,18 @@
   <link rel="shortcut icon" href="images/gift.png" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
 
+  <!-- Document Title -->
   <title>FLOWERS</title>
+
+  <script>
+    // Chờ 7 giây trước khi thực hiện các hành động khác
+    document.addEventListener("DOMContentLoaded", function () {
+      setTimeout(function () {
+        console.log("Đã chờ 7 giây, tiếp tục thực thi.");
+        // Thêm các hành động khác ở đây nếu cần
+      }, 7000);
+    });
+  </script>
 </head>
 
 <body class="not-loaded">
@@ -34,28 +45,22 @@
         <div class="flower__light flower__light--7"></div>
         <div class="flower__light flower__light--8"></div>
       </div>
+      <div class="flower__line">
+        <div class="flower__line__leaf flower__line__leaf--1"></div>
+        <div class="flower__line__leaf flower__line__leaf--2"></div>
+        <div class="flower__line__leaf flower__line__leaf--3"></div>
+        <div class="flower__line__leaf flower__line__leaf--4"></div>
+        <div class="flower__line__leaf flower__line__leaf--5"></div>
+        <div class="flower__line__leaf flower__line__leaf--6"></div>
+      </div>
     </div>
   </div>
 
   <!-- Title -->
-  <h1 class="title"><span id="title">Flower Animation</span></h1>
-
-  <!-- Import Javascript -->
-  <script src="js/main.js"></script>
-
-  <script>
-    // Đợi 7 giây trước khi thực hiện thay đổi hình ảnh hoặc cập nhật gì đó
-    setTimeout(function() {
-      console.log("Đã chờ 7 giây. Cập nhật hình ảnh...");
-
-      // Cập nhật hình ảnh hoặc bất kỳ nội dung nào bạn muốn thay đổi sau 7 giây
-      // Ví dụ thay đổi nội dung của thẻ <span> trong tiêu đề
-      document.getElementById("title").innerText = "Hình ảnh đã thay đổi!";
-      
-      // Thay đổi hình ảnh nếu bạn có thẻ <img> trong HTML
-      // document.getElementById("imageId").src = "path/to/new/image.jpg";
-    }, 7000);  // 7000ms = 7 giây
-  </script>
+  <h1 class="title"><span id="title"></span></h1>
 </body>
 
 </html>
+
+<!-- Import Javascript -->
+<script src="js/main.js"></script>
